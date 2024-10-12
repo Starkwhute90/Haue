@@ -1,0 +1,85 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.book {
+    width: 80vw;
+    height: 90vh;
+    perspective: 1500px;
+    position: relative;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 1s ease;
+    transform-origin: left;
+    backface-visibility: hidden;
+    border: 2px solid #ddd;
+}
+
+.cover {
+    background-color: #a5821d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.blank {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #aaa;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#prevPage {
+    left: 10px;
+}
+
+#nextPage {
+    right: 10px;
+}
+
+button:hover {
+    background-color: #555;
+}￼Enter
